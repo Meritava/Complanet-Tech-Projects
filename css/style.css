@@ -1,0 +1,48 @@
+body {
+    font-size: 1rem;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* border: 5px solid burlywood; */
+}
+.sub-container {
+    border: 1px solid brown;
+    width: 100%;
+}
+.sub-con {
+    border: 1px solid brown;
+    width: 100%;
+    margin: 0 auto;
+    /* max-width: 700px;  the container doesn't stretch more than that when it hets to this width.. you can uncomment and try */
+     /* min-width: 500px; will never go smaller than 500px you can uncomment and try */
+}
+img {
+    width: 100%;
+}
+ul {
+    font-size: 2rem; /* gets it's font size from the root that's the body or html... you can set the html font size or leave it */
+}
+
+.click-me {
+    padding: 1em; /* setting with em makes the padding scale with the font size, you can change unit to px to check the effect */
+    background: brown;
+    border: 1px solid brown;
+    margin-left: 2em; 
+}
+.big {
+    font-size: 1.0rem;
+}
+.small {
+    font-size: .75rem;
+}
+.margin-testing {
+    margin-top: 2em;
+}
+.sec-four {
+    width: 100%;
+}
+/* 
+.sec-four img {
+    height: 100px;
+} */

@@ -1,0 +1,68 @@
+body {
+    font-size: 1.125rem; /* set the font size of your page, all other font size will be relative to it, you can as well don't set it, leave to default */
+    margin: 0;
+    color: #707070;
+}
+/* Topography */
+h1 {
+    font-size: 3rem;
+    color: #312614;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h1 span {
+    color: #b7832f;
+}
+p {
+    margin: 0;
+}
+
+/* Layout */
+.container {
+    width: 95%;
+    margin: 0 auto; /*centers the page, should be put in a container, so your whole page should be put in a container with a margin, 0 auto to center the page */
+    max-width: 1000px; /* the max-width controls the width of the screen, try increasing it to see the difference */
+}
+.img-one img {
+    width: 100%; /* prevent the image from scrolling beyond the screen, container.. You can use a max width here, actually try a max width of 100% first before using normal width */
+    height:60px;
+}
+.column {
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    align-items: start;
+}
+@media (max-width: 600px) {
+    .column {
+        flex-direction: column;
+    }
+}
+.col-bg {
+    background: #312614;
+    padding: 1em;
+    color: #fff;
+}
+.col-1 {
+    width: 20%;
+}
+.col-2 {
+    width: 45%;
+}
+.col-3 {
+    width: 70%;
+}
+@media (max-width: 600px) {
+    .col-1,
+    .col-2,
+    .cal-3 {
+        width: 100%;
+    }
+}
+
+/* for landscale orientation the width is widder then the bigger while for potrait the 
+height is bigger than the width, so you should also consider this while building for different
+ screen sizes... set media for landscale as well... Also the other of things matters, media queries should always come 
+ after the default style */ 
